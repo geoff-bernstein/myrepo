@@ -1,15 +1,23 @@
-....
-
 ---
 title: "RMD Template"
 author: "sulgrave"
-date:  
-output: md_document <!--word_ pdf_ or html_document
-                      beamer_, ioslides, or
-                      slidy_presentation-->
+date:
+output:
+  html_document:
+    toc: true
+    number_sections: true
+  md_document:
+    variant: markdown_github
+  pdf_document:
+    toc: true
+  word_document: 
+    toc: true
 ---
 
-# Header 1 {#anchor}
+<!--output options: md_, word_ pdf_ or html_document
+            beamer_, ioslides, or slidy_presentation-->
+
+# Header 1: Blocking out R Code {#anchor}
 
 ```{r}
 Post an r code block
@@ -20,7 +28,15 @@ echo = FALSE          hides only code itself            evaluates code and displ
 eval = FALSE          displays only code itstelf        no evaluation and no output
 engine = 'python'     displays as pythoncode
 ```
+
+
 inline r code is sexy: `r factorial(4)` 
+
+> - Eat eggs
+> - Smoke
+> - Go to the bathroom
+
+
 
 <br><br><br>
       
@@ -36,7 +52,7 @@ The elastic-net penalty is controlled by $\alpha$, and bridges the gap between l
   
   <br><br><br>
   
-### Header 3: Displaying and Modifying Text {.css_class}
+### Header 3: Displaying and Modifying Text (without a slide break){.css_class}
 W/ Plain text, End a line with two spaces to start a new paragraph.  
 *italics* and **bold**  
 Emphasized text <em>italicizes and jumps out</em> 
@@ -50,20 +66,27 @@ equation block: $$E = mc^{2}$$
 <!--Text comment not printed to output-->
 \textbf{Tex ignored in HTML}  
 URLs with <http://www.rstudio.com> or [link](www.rstudio.com)  
-Jump to [Header 1](#anchor)  
-Jump to [Header 4](#anchor)
+
 
 #### Header 4
 ##### Header 5
-###### Header 6
+###### Header 6 is grey
 
 
 image:
 ![Caption] (smallorb.png)
 
-unordered lists can be made  
-* **bullet** -  using asterisks  
-- **bullet** -  using a single dash
+unordered lists can be made with *, -, or +
+
+- **bullet 1**
+    - one more item
+- *bullet 2* 
+    - one more item
+        - one more item
+
+    
+    
+
 
 1. ordered list
 2. item 2
@@ -100,4 +123,6 @@ Smith cited without author [-@smith04].
 A footnote [^1]  
 [^1]: Here is the footnote
  
+Jump to [Top](#anchor)
+
  
