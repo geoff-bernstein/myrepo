@@ -1,11 +1,10 @@
 ---
 title: "RMD Template"
 author: "sulgrave"
-date:
+date: 1 Jan 2018
 output:
   html_document:
     toc: true
-    number_sections: true
   md_document:
     variant: markdown_github
   pdf_document:
@@ -32,15 +31,9 @@ engine = 'python'     displays as pythoncode
 
 inline r code is sexy: `r factorial(4)` 
 
-> - Eat eggs
-> - Smoke
-> - Go to the bathroom
-
-
-
-<br><br><br>
+<br><br>
       
-## Header 2: Some LaTeX Examples {#css_id}
+## Header 2: Some LaTeX Examples{#css_id}
 $$ ozone = \alpha + \beta_{1} temperature + \sum_{locales} \beta_{i} locale_{i} + \sum_{locales} \beta_{j} interaction_{j} + \epsilon$$
 
 $$ \min_{\beta_0,\beta} \frac{1}{N} \sum_{i=1}^{N} w_i l(y_i,\beta_0+\beta^T x_i) + \lambda\left[(1-\alpha)||\beta||_2^2/2 + \alpha ||\beta||_1\right]$$
@@ -52,30 +45,25 @@ The elastic-net penalty is controlled by $\alpha$, and bridges the gap between l
   
   <br><br><br>
   
-### Header 3: Displaying and Modifying Text (without a slide break){.css_class}
+### Header 3: Displaying and Modifying Text (without a slide break)
 W/ Plain text, End a line with two spaces to start a new paragraph.  
 *italics* and **bold**  
-Emphasized text <em>italicizes and jumps out</em> 
-`verbatim code in monospace text`  
-sub~2~ / superscript^2^
+Emphasized text <em>italicizes and jumps out</em>  
+`verbatim code in monospace text`    
+sub~2~ / superscript^2^  
 ~~strikethrough~~  
+==highlight text==   
 escaped characters: \* \_ \\  
 endash: --, emdash: ---  
 in-line equation: $A = \pi*r^{2}$  
 equation block: $$E = mc^{2}$$  
 <!--Text comment not printed to output-->
 \textbf{Tex ignored in HTML}  
-URLs with <http://www.rstudio.com> or [link](www.rstudio.com)  
+URLs with <http://www.rstudio.com> or [link](www.rstudio.com) 
 
+<br>
 
-#### Header 4
-##### Header 5
-###### Header 6 is grey
-
-
-image:
-![Caption] (smallorb.png)
-
+#### Header 4 Listed Items
 unordered lists can be made with *, -, or +
 
 - **bullet 1**
@@ -84,18 +72,13 @@ unordered lists can be made with *, -, or +
     - one more item
         - one more item
 
-    
-    
-
-
-1. ordered list
+1. Manuallly ordered list
 2. item 2
       i) sub-item  
           A. sub-sub-item 
 
 
-Or ordered lists:
-
+Or Automatically ordered lists:
 1. items
 1. are
 1. automatically
@@ -109,11 +92,32 @@ continues after
 (@) an interruption 
     i) and can still have  
       A. sub items  
+
+
+##### Header 5 Creating Tables
+| Heading       | Heading       | Heading |
+| ------------- |---------------| --------|
+| content       | content       | content |
+| content       | content       | content |
+| content       | content       | content |
+
+<br>
+###### Header 6 is grey for some reason
+
+
+image:
+![Caption] (smallorb.png)
+
+
 <br>
  
-horizontal rule/slide break:  
+horizontal rule/slide break:
+
+------  
+******  
+
+ 
 <br>
-***
 
 Bibliography Citations:
 Smith cited [@smith04].
@@ -121,8 +125,7 @@ Smith cited without author [-@smith04].
 @smith04 cited in line.
 
 A footnote [^1]  
-[^1]: Here is the footnote
- 
+
 Jump to [Top](#anchor)
 
- 
+[^1]: Here is the footnote 
