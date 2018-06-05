@@ -61,28 +61,15 @@ Jump to [Header 4](#anchor)
 image:
 ![Caption] (smallorb.png)
 
-* unordered list
- + sub-item 1
- + sub-item 2
- - sub-sub-item 1
-
-* item 2
- Continued (indent 4 spaces)
-
-* **bullet** -  using asterisk
+unordered lists can be made  
+* **bullet** -  using asterisks  
 - **bullet** -  using a single dash
 
 1. ordered list
 2. item 2
-      i) sub-item 
-      A. sub-sub-item 
-* apple
-* pear 
-* banana
+      i) sub-item  
+          A. sub-sub-item 
 
-- apple
-- pear
-- banana
 
 Or ordered lists:
 
@@ -101,7 +88,6 @@ continues after
       A. sub items  
 <br>
  
->- to have bullets appear on click  
 horizontal rule/slide break:  
 <br>
 ***
