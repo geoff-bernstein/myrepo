@@ -20,7 +20,7 @@ echo = FALSE          hides only code itself            evaluates code and displ
 eval = FALSE          displays only code itstelf        no evaluation and no output
 engine = 'python'     displays as pythoncode
 ```
-inline r code is sexy: ```r factorial(4)` 
+inline r code is sexy: `r factorial(4)` 
 
 <br><br><br>
       
@@ -69,8 +69,8 @@ image:
 * item 2
  Continued (indent 4 spaces)
 
-* **bullet** - first point
-* **bullet** - second point
+* **bullet** -  using asterisk
+- **bullet** -  using a single dash
 
 1. ordered list
 2. item 2
@@ -93,16 +93,14 @@ Or ordered lists:
     - nested
         * items
         
-(@) An Ordered List
+(@) An Ordered List  
 (@) whose numbering  
-continues after
-(@) an interruption  
+continues after  
+(@) an interruption 
     i) and can still have  
       A. sub items  
 <br>
-- slide bullet 1
-- slide bullet 2  
-<br>
+ 
 >- to have bullets appear on click  
 horizontal rule/slide break:  
 <br>
